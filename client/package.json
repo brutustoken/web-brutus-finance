@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@walletconnect/modal": "^2.7.0",
+    "@walletconnect/web3-provider": "^1.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0"
+    "react-router-dom": "^6.20.0",
+    "tronweb": "^6.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

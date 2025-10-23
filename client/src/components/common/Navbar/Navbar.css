@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--spacing-lg);
 }
 
 .navbar-logo {
@@ -34,6 +35,13 @@
 .navbar-menu {
   display: flex;
   gap: var(--spacing-xl);
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-wallet {
+  display: flex;
   align-items: center;
 }
 
@@ -74,10 +82,19 @@
 @media (max-width: 768px) {
   .navbar-container {
     padding: var(--spacing-md) var(--spacing-lg);
+    flex-wrap: wrap;
   }
   
   .navbar-menu {
     gap: var(--spacing-md);
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: var(--spacing-md);
+  }
+  
+  .navbar-wallet {
+    order: 2;
   }
   
   .navbar-link {

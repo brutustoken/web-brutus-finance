@@ -1,0 +1,86 @@
+.nft-status {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 2px solid var(--color-border);
+  background: var(--color-bg-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-fast);
+}
+
+.nft-status-icon {
+  font-size: var(--font-size-base);
+}
+
+.nft-status-text {
+  white-space: nowrap;
+}
+
+/* Verified State */
+.nft-status-verified {
+  border-color: var(--color-neon-cyan);
+  color: var(--color-neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.nft-status-verified:hover {
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Verifying State */
+.nft-status-verifying {
+  border-color: var(--color-text-muted);
+  color: var(--color-text-muted);
+}
+
+.nft-status-verifying .nft-status-icon {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Required State */
+.nft-status-required {
+  border-color: var(--color-neon-yellow);
+  color: var(--color-neon-yellow);
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+  animation: pulse-warning 2s ease-in-out infinite;
+}
+
+.nft-status-required:hover {
+  background: rgba(255, 255, 0, 0.1);
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.5);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse-warning {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.6);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nft-status {
+    padding: var(--spacing-xs);
+  }
+
+  .nft-status-text {
+    font-size: var(--font-size-xs);
+  }
+}

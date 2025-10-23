@@ -1,0 +1,70 @@
+.wallet-button-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background: var(--bg-secondary);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-brutal);
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+}
+
+.wallet-balance {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.wallet-address {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-family: 'Courier New', monospace;
+}
+
+.connect-wallet-button {
+  min-width: 150px;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.disconnect-button {
+  min-width: 120px;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: var(--shadow-brutal);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--accent-primary);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .wallet-button-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .wallet-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .connect-wallet-button,
+  .disconnect-button {
+    width: 100%;
+  }
+}

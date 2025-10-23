@@ -1,0 +1,111 @@
+.nft-collection-page {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: var(--color-bg-primary);
+}
+
+.nft-collection-header {
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background: var(--color-bg-secondary);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.page-title {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.page-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.nft-collection-content {
+  padding: var(--spacing-xl);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Empty State */
+.nft-collection-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  padding: var(--spacing-2xl);
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 6rem;
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.5;
+}
+
+.empty-title {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-neon-cyan);
+  text-shadow: var(--shadow-neon-cyan);
+  margin: 0 0 var(--spacing-lg) 0;
+  letter-spacing: 0.05em;
+}
+
+.empty-message {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 500px;
+  margin: 0 0 var(--spacing-xl) 0;
+  line-height: 1.6;
+}
+
+.empty-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nft-collection-page {
+    padding-top: 60px;
+  }
+
+  .nft-collection-header {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .page-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .page-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .nft-collection-content {
+    padding: var(--spacing-md);
+  }
+
+  .empty-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .empty-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .empty-actions button {
+    width: 100%;
+  }
+}
