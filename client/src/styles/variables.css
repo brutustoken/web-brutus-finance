@@ -1,0 +1,81 @@
+:root {
+  /* Primary Colors - Dark Brutalist */
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #1a1a1a;
+  --color-bg-tertiary: #2a2a2a;
+  
+  /* Neon Accents */
+  --color-neon-cyan: #00ffff;
+  --color-neon-magenta: #ff00ff;
+  --color-neon-yellow: #ffff00;
+  --color-neon-green: #00ff00;
+  --color-neon-red: #ff0055;
+  
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
+  --color-text-muted: #888888;
+  --color-text-dark: #333333;
+  
+  /* UI Elements */
+  --color-border: #333333;
+  --color-border-bright: #555555;
+  --color-error: #ff0055;
+  --color-success: #00ff88;
+  --color-warning: #ffff00;
+  
+  /* Effects */
+  --scanline-opacity: 0.05;
+  --glitch-intensity: 2px;
+  --crt-curve: 0.02;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  
+  /* Typography */
+  --font-mono: 'Courier New', 'Monaco', 'Consolas', monospace;
+  --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+  
+  /* Shadows */
+  --shadow-neon-cyan: 0 0 10px var(--color-neon-cyan), 0 0 20px var(--color-neon-cyan);
+  --shadow-neon-magenta: 0 0 10px var(--color-neon-magenta), 0 0 20px var(--color-neon-magenta);
+  --shadow-neon-yellow: 0 0 10px var(--color-neon-yellow), 0 0 20px var(--color-neon-yellow);
+  --shadow-neon-green: 0 0 10px var(--color-neon-green), 0 0 20px var(--color-neon-green);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+  
+  /* Z-index */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  
+  /* Borders */
+  --border-width: 2px;
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+}
