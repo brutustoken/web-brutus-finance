@@ -162,6 +162,7 @@ export const WalletProvider: React.FC<WalletProviderProps> = ({ children }) => {
     tronWeb,
   };
 
+
   return (
     <WalletContext.Provider value={value}>
       {children}
